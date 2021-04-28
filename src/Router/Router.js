@@ -6,6 +6,7 @@ import Header from '../components/Header/Header';
 import Contact from "../components/Contact/contact";
 import Products from "../components/Products/Products";
 import NotFound from "../components/Notfound/Notfound";
+import ProductDetail from "../components/ProductDetail/ProduectDetail";
 const AppRouter=()=>{
      
     return(
@@ -20,6 +21,7 @@ const AppRouter=()=>{
              <Route exact path='/about' component={About} />
              <Route exact path='/contact' component={Contact} />
              <Route exact path='/products' component={Products} />
+             <Route path="/products/:id" component={ProductDetail} />
              <Route   component={NotFound}/>
              </Switch>
           </Router>
