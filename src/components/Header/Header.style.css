@@ -1,0 +1,13 @@
+.active-nav button {
+	background-color: #b32727 !important;
+    padding-left: 12px;
+	padding-right: 12px;
+	border-radius: 32px;
+	padding-top: 4px;
+    padding-bottom: 3px;
+	
+}
+.btn{
+    color: white !important;
+    font-size: 0.8rem !important;
+}

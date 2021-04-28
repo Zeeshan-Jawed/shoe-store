@@ -1,0 +1,21 @@
+.container{
+    background-color: #282c2f;
+	padding: 40px 0;
+	text-align: center;
+}
+.container p {
+	font-family: Roboto;
+	color: #979696;
+	margin: 0 10px 25px
+}
+.container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
