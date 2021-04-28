@@ -38,7 +38,7 @@ const Header = () => {
                 <Toolbar>
                     
                     <div className={classes.logo}>
-                    <img src={logo} style={{ width: "175px" }} alt="Logo" />
+                    <img src={logo}  alt="Logo" />
           </div>
                     
                     {menuItems.map(({ name, link }, index) => {
