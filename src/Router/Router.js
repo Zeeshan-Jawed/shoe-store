@@ -1,10 +1,11 @@
 import React from "react";
-import {BrowserRouter as Router,Route,Switch,Redirect} from "react-router-dom";
+import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 import About from "../components/About/About";
 import Home from "../components/Home/Home";
 import Header from '../components/Header/Header';
 import Contact from "../components/Contact/contact";
 import Products from "../components/Products/Products";
+import NotFound from "../components/Notfound/Notfound";
 const AppRouter=()=>{
      
     return(
@@ -17,6 +18,7 @@ const AppRouter=()=>{
              <Route exact path='/about' component={About} />
              <Route exact path='/contact' component={Contact} />
              <Route exact path='/products' component={Products} />
+             <Route path="*" component={NotFound}/>
           </Router>
           </div>
     )
