@@ -15,9 +15,9 @@ const Products = () => {
     return (
         <div>
             <Grid container spacing={2}>
-            {ShoesDetails.map((shoe, index) =><ProductCart key={index} shoe={shoe} /> )}
+            {ShoesDetails.map((shoe) =><ProductCart key={shoe.id} shoe={shoe} /> )}
         </Grid>
-        { pageCount > 1 && <Pagination count={pageCount} onChange={paginationHandleChange} variant="outlined"  color="secondary"/>}
+        {/* { pageCount > 1 && <Pagination count={pageCount} onChange={paginationHandleChange} variant="outlined"  color="secondary"/>} */}
         </div>
     )
 }

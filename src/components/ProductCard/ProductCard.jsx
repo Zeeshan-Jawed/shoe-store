@@ -2,13 +2,14 @@ import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "
 import Rating from '@material-ui/lab/Rating';
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import './ProductCard.style.css'
+import { Link } from "react-router-dom";
 const ProductCart=({shoe,minimal})=>{
     const images = require.context("../../", true);
     return(
         <Grid 
             item xs={6}
                 sm={8}
-                md={4}> <Card >
+                md={4}> 
                     <div>
                         <Rating
                             className='rating'
@@ -19,7 +20,11 @@ const ProductCart=({shoe,minimal})=>{
                             readOnly
                         />
                         <span className='priceTag'>${shoe.price}</span>
-                    </div><CardActionArea>
+                    </div>
+                    <Link to={`/products/${shoe.id}`} className='gridLink'>
+                    <Card >
+
+                    <CardActionArea>
                         <CardMedia
                             component="img"
                             alt={shoe.name}
@@ -51,7 +56,8 @@ const ProductCart=({shoe,minimal})=>{
                         <span>{ minimal ? 'Shop Now' : 'See Details' }</span>
                         </div>
                     </CardActionArea>
-                </Card></Grid>
+                </Card>
+                </Link></Grid>
     )
 
 }
