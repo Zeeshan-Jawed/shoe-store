@@ -7,8 +7,8 @@ const ProductCart=({shoe,minimal})=>{
     const images = require.context("../../", true);
     return(
         <Grid 
-            item xs={6}
-                sm={8}
+            item xs={12}
+                sm={12}
                 md={4}> 
                     <div>
                         <Rating
