@@ -10,9 +10,10 @@ const Products = () => {
         <Grid container spacing={2}>
 
 
-            {ShoesDetails.map((shoe, index) => <Grid item xs={6}
+            {ShoesDetails.map((shoe, index) => <Grid key={index}
+            item xs={6}
                 sm={8}
-                md={4}> <Card>
+                md={4}> <Card >
                     <div>
                         <Rating
                             className='rating'
