@@ -19,4 +19,8 @@ img {
        width: 80px;
        
     }
+    .btn{
+        color: white !important;
+        font-size: 0.5rem !important;
+    }
 }
