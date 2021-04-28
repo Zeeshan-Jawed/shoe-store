@@ -1,7 +1,7 @@
 import './Home.style.css';
 import image from '../../images/home.png'
 import { Typography } from '@material-ui/core';
-import { Grid, Button,Paper } from "@material-ui/core";
+import { Grid, Button } from "@material-ui/core";
 import ShoesDetails from '../../data/ShoesDetails'
 import ProductCart from '../ProductCard/ProductCard';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ const Home=()=>{
             <Grid container spacing={2}>
             {ShoesDetails.slice(0, 3).map((shoe, index) =>  (
             
-              <ProductCart shoe={shoe} />
+              <ProductCart shoe={shoe} key={index} />
             
           ))}
             </Grid>
