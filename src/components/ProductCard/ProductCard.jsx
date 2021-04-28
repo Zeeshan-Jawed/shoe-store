@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "
 import Rating from '@material-ui/lab/Rating';
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import './ProductCard.style.css'
-const ProductCart=({shoe})=>{
+const ProductCart=({shoe,minimal})=>{
     const images = require.context("../../", true);
     return(
         <Grid 
@@ -48,7 +48,7 @@ const ProductCart=({shoe})=>{
                             </Typography>
                         </CardContent>
                         <div className='shopNow'>
-                            <span>See Detail</span>
+                        <span>{ minimal ? 'Shop Now' : 'See Details' }</span>
                         </div>
                     </CardActionArea>
                 </Card></Grid>

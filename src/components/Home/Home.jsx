@@ -16,7 +16,7 @@ const Home=()=>{
             <Grid container spacing={2}>
             {ShoesDetails.slice(0, 3).map((shoe, index) =>  (
             
-              <ProductCart shoe={shoe} key={index} />
+              <ProductCart shoe={shoe} key={index} minimal />
             
           ))}
             </Grid>
